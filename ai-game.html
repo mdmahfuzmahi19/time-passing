@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#box {
+  width: 70px;
+  height: 70px;
+  background-color: red;
+  position: absolute;
+  border-radius: 4  l0px;
+}
+</style>
+</head>
+<body>
+
+<p>Score: <span id="score">0</span></p>
+<p>Time remaining: <span id="time">30</span></p>
+<div id="box"></div>
+
+<script>
+// Initialize variables
+var score = 0;
+var time = 60;
+var box = document.getElementById("box");
+var scoreElement = document.getElementById("score");
+var timeElement = document.getElementById("time");
+
+// Move the box to a random position on the screen
+function moveBox() {
+  var x = Math.floor(Math.random() * (window.innerWidth - 50));
+  var y = Math.floor(Math.random() * (window.innerHeight - 50));
+  box.style.left = x + "px";
+  box.style.top = y + "px";
+}
+
+// Update the score when the box is clicked
+box.onclick = function() {
+  score++;
+  scoreElement.innerHTML = score;
+  moveBox();
+}
+
+// Decrement the time remaining and end the game when time runs out
+function decrementTime() {
+  time--;
+  timeElement.innerHTML = time;
+  if (time == 0) {
+    alert("Game over! Your final score is " + score);
+    clearInterval(timer);
+  }
+}
+
+// Start the game
+moveBox();
+var timer = setInterval(decrementTime, 1000);
+</script>
+
+</body>
+</html>
