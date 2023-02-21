@@ -1,0 +1,61 @@
+/* *{
+    margin: 0px;
+} */
+
+/* You can always manually trigger it with [Ctrl+Space]. By default, Tab or Enter are the accept keyboard triggers but you can also customize these key bindings...............exta typing option ar jon no  */
+h3{
+    color: brown;
+}
+span{
+    border: 2px solid purple;
+    height: 200px;
+    width: 100 px;
+    margin-left: 20px;
+    margin-right: 20px;
+    /* margin-top: 50px; */
+    /* display: inline-block; */
+    display: none;
+}
+p{
+    color: rgb(52, 46, 37);
+    font-weight: 100;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+a{
+    text-decoration:none;
+    color: rgb(0, 0, 0);
+    font-weight: 100;
+    /* text-decoration-color: rgb(77, 48, 48); */
+}
+.header{
+    color: rgb(128, 154, 176);
+    height: 400px;
+    background-image: url(../img/EC276A94-BD14-4FC4-B49C-CCCDF256F2B3-BEC802D7-53AD-437C-8403-D29E89BC2A8D.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: ;
+    background-color: brown; 
+    /* background-color are useing here for safty.
+    if amyway the page cannot be uploaded,then the web will show the background-color */
+
+    /* background-blend-mode: multiply; */  
+}
+.blog{
+    background-color: darkkhaki;
+    border: 5px solid red;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style:double;
+    border-color:cadetblue;
+    margin: 40px;
+    padding: 20px;
+    
+    background-color: rgb(63, 6, 218);
+    box-shadow: 10px 10px 10px gray;
+}
+h3{
+   color: aquamarine; 
+   text-decoration:underline;
+   font-size: 40px;
+}
